@@ -9,6 +9,7 @@ import (
 	"path/filepath"
 
 	"tgustinak.github.io/internal/generator"
+	"tgustinak.github.io/internal/minify"
 	"tgustinak.github.io/internal/parser"
 	"tgustinak.github.io/internal/watcher"
 )
@@ -60,12 +61,17 @@ func processFiles(contentDir string, gen *generator.Generator) error {
 
 		parsed := parser.ParseMarkdown(content)
 
+		minifiedHtml, err := minify.Minify([]byte(parsed.HTMLOutput))
+		if err != nil {
+			return err
+		}
+
 		outputFile := filepath.Base(path[:len(path)-3]) + ".html"
-		return gen.Generate(map[string]interface{}{
+		return gen.Generate(map[string]any{
 			"Title":       meta.Title,
 			"Date":        meta.Date,
 			"Tags":        meta.Tags,
-			"Content":     template.HTML(parsed.HTMLOutput),
+			"Content":     template.HTML(minifiedHtml),
 			"Description": meta.Description,
 		}, outputFile)
 	})
