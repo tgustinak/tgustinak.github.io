@@ -29,7 +29,7 @@ this world has changed a lot so I am tinkering with it a bit and planning to pro
 - PostgreSQL
 - PHP (Zend, Laravel)
 
-### Tech Skills (<5 years)
+### Tech Skills (< 5 years)
 
 - Ruby
 - Vuejs
