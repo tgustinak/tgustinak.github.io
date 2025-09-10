@@ -146,5 +146,5 @@ Banská Bystrica, Slovakia
 
 ## Contact
 
-[tomas.gustinak@gmail.com](mailto:tomas.gustinak@gmail.com)
-[GitHub](https://github.com/tgustinak)
+- [tomas.gustinak@gmail.com](mailto:tomas.gustinak@gmail.com)
+- [GitHub](https://github.com/tgustinak)
