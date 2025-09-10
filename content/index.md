@@ -72,6 +72,7 @@ get to know each other better. Looking forward to hearing from you :)
 - AWS, GCloud
 - Linux
 - AI
+- Next.js
 
 ### Soft Skills
 
