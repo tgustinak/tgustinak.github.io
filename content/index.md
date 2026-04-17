@@ -40,7 +40,7 @@ and delivering resilient solutions that balance user experience, code quality, a
 
 ## Work Experience
 
-### Since 2024 Indra Avitech
+### Since 2024 Indra Avitech / Eurocontrol
 
 Frontend Engineer on large-scale aviation data platform; built shared components and contributed to micro‑frontend architecture
 
@@ -50,6 +50,7 @@ Frontend Engineer on large-scale aviation data platform; built shared components
 - Partnered closely with system architects and UI/UX teams to align technical implementation with product and design vision
 - Proposed and delivered multiple frontend improvements through proof-of-concept implementations (e.g., download progress indicators, leave-form confirmation, improved URL structure)
 - Contributed to the setup and expansion of an end-to-end testing suite using Playwright (Python), increasing confidence in frontend stability and regression detection
+- Interviewing and Tech Review of candidates
 
 Stack: TypeScript, React, TanStack Query, React Hook Form, Webpack, Vite, Module Federation, OpenAPI, Docker, Jenkins, Kubernetes
 
