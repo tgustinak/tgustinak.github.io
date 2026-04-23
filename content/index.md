@@ -51,8 +51,9 @@ Frontend Engineer on large-scale aviation data platform; built shared components
 - Proposed and delivered multiple frontend improvements through proof-of-concept implementations (e.g., download progress indicators, leave-form confirmation, improved URL structure)
 - Contributed to the setup and expansion of an end-to-end testing suite using Playwright (Python), increasing confidence in frontend stability and regression detection
 - Interviewing and Tech Review of candidates
+- Using AI (Claude Code) to improve workflow, daily routines
 
-Stack: TypeScript, React, TanStack Query, React Hook Form, Webpack, Vite, Module Federation, OpenAPI, Docker, Jenkins, Kubernetes
+Stack: AI, TypeScript, React, TanStack Query, React Hook Form, Webpack, Vite, Module Federation, OpenAPI, Docker, Jenkins, Kubernetes
 
 ### 2021 - 2022 Whereby
 
