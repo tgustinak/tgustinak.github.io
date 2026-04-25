@@ -1,114 +1,143 @@
 ---
 title: Tomáš Gustiňák
 description: CV
-date: 10.9.2025
+date: 25.4.2026
 tags: []
 ---
 
 # Tomáš Gustiňák
 
-Full‑Stack Engineer with 10+ years of experience building scalable, user‑centric web applications across sectors—including news media,
-aviation, and SaaS with global, high‑traffic environments. Skilled in both backend (Golang, Laravel, Node.js) and
-frontend (React, Vue) development. A proactive modernization lead: I’ve driven migrations to Git, introduced component‑based
-architectures, and advanced development workflows (CI/CD, Docker). Passionate about improving workflows, collaborating across teams,
-and delivering resilient solutions that balance user experience, code quality, and efficiency.
+Senior Full-Stack Engineer (Backend-Focused) with 12+ years of experience designing and scaling web applications in high-traffic, globally distributed environments.
 
-## Skills
+Specializing in system architecture, backend services, and complex product development, with strong frontend expertise when needed. Proven track record of modernizing legacy systems, improving engineering workflows, and mentoring teams in fully remote organizations.
 
-### Tech Skills (5+ years)
+Previously contributed to production systems at Sticker Mule and other international SaaS platforms.
 
-- JavaScript/TypeScript (React, Vue, Redux, Webpack, Vite, Module Federation, ...)
-- NodeJS (Express)
-- HTML/CSS
-- MySQL
-- PostgreSQL
-- PHP (Zend, Laravel)
+---
 
-### Tech Skills (< 5 years)
+## Core Expertise
 
-- Golang
-- HTMX
-- Docker
-- Kubernetes
-- Ruby, Ruby on Rails
-- GraphQL
-- Vuejs
-- AWS, GCloud
-- Linux
-- AI
-- Next.js
+- System Architecture & Scalable Web Applications
+- Backend Development (Node.js, Go, PHP/Laravel)
+- High-Traffic & Distributed Systems
+- Frontend Architecture (React, micro-frontends)
+- Developer Experience & Workflow Optimization (CI/CD, testing, tooling)
+- Mentoring, Hiring, and Technical Leadership
+- Remote-first collaboration (since 2018)
 
-## Work Experience
+---
 
-### Since 2024 Indra Avitech / Eurocontrol
+## Technical Stack
 
-Frontend Engineer on large-scale aviation data platform; built shared components and contributed to micro‑frontend architecture
+**Backend:** Node.js (Express), Golang, PHP (Laravel, Zend), Ruby on Rails
+**Frontend:** React, Vue, TypeScript, Redux, Module Federation
+**Infrastructure:** Docker, Kubernetes, AWS, GCP, Terraform, Jenkins
+**Data:** PostgreSQL, MySQL, GraphQL, gRPC
+**Other:** CI/CD, Playwright, OpenAPI, Linux
 
-- Collaborated on a multi-team, global aviation project focused on processing and managing aeronautical data
-- Served as part of the core team responsible for building and maintaining a shared component library and utilities used by other frontend teams
-- Designed and developed applications for User & Organization Management, Notifications, Legal Recordings, and Certificates, ensuring usability and compliance
-- Partnered closely with system architects and UI/UX teams to align technical implementation with product and design vision
-- Proposed and delivered multiple frontend improvements through proof-of-concept implementations (e.g., download progress indicators, leave-form confirmation, improved URL structure)
-- Contributed to the setup and expansion of an end-to-end testing suite using Playwright (Python), increasing confidence in frontend stability and regression detection
-- Interviewing and Tech Review of candidates
-- Using AI (Claude Code) to improve workflow, daily routines
+---
 
-Stack: AI, TypeScript, React, TanStack Query, React Hook Form, Webpack, Vite, Module Federation, OpenAPI, Docker, Jenkins, Kubernetes
+## Experience
 
-### 2021 - 2022 Whereby
+### 2024 – Present
 
-Full-stack Engineer on video conferencing SaaS app
+**Senior Frontend / Architecture Engineer** — Indra Avitech / Eurocontrol
 
-- Overhauled signup and user activation process to streamline onboarding and improve conversion
-- Simplified and automated billing for business customers using custom metrics for each customer
-- Contributed to increase our test coverage (both unit and E2E)
-- Served as on-call engineer with 1 week rotation period
+Working on a large-scale aviation platform for managing and processing aeronautical data across multiple teams and systems.
 
-Stack: TypeScript, React, Redux, Node.js (Express), Uleash, Jenkins, Docker, Terraform, AWS
+- Contributed to architecture and implementation of a micro-frontend ecosystem used by multiple teams
+- Designed and maintained shared component libraries and frontend infrastructure used across the platform
+- Led development of key applications (User & Organization Management, Notifications, Legal Recordings, Certificates)
+- Collaborated with architects and product teams to align technical design with long-term system goals
+- Introduced improvements to UX and system behavior through rapid prototyping and production-ready solutions
+- Expanded end-to-end testing strategy (Playwright), improving reliability and regression detection
+- Participated in hiring and technical evaluation of engineers
+- Actively leveraged AI tools to optimize development workflows and productivity
 
-### 2018 - 2020 Sticker Mule
+**Impact:**
 
-Full-stack Engineer on internal apps supporting manufacturing and shipping
+- Improved consistency and reusability across multiple frontend teams
+- Increased confidence in releases through stronger testing practices
+- Helped shape frontend architecture in a multi-team environment
 
-- Developed and maintained internal applications to support manufacturing and shipping processes;
-- Implemented new features, optimized performance, and refactored legacy systems into scalable microservices with comprehensive unit test coverage
+---
 
-Stack: Ruby, Ruby on Rails, TypeScript, Node.js (Express), React, Redux, GraphQL, gRPC, Jenkins, Docker, GCloud
+### 2021 – 2022
 
-### 2014 - 2018 TRIONYX technologies
+**Full-Stack Engineer** — Whereby
 
-Lead Backend Engineer on nation-wide high traffic news portal for television channel
+Worked on a real-time video conferencing SaaS platform used globally.
 
-- Redesigned application architecture to make the codebase more maintainable and easier for newcomers to understand
-- Introduced code reviews so the team shares knowledge and start conversations about best practices and code style
-- Migrated from SVN to Git
-- Introduced code quality standards and checks
-- Implemented Gulp (later Webpack) for our frontend builds so we can use tools like Sass to boost our productivity
-  and help maintain our CSS files easily
-- Introduced unit testing for critical parts of the codebase (we had 0 coverage)
-- Developed and maintained a VM provisioned by Vagrant so our local development setup is as close as possible to production environment
-- Proposed multiple improvements to our workflow (CI/CD, Docker)
-- Mentored junior developers on their way
+- Redesigned onboarding and signup flows, improving user activation and reducing friction
+- Built and automated billing systems tailored to business customers with custom usage metrics
+- Increased test coverage (unit + E2E), improving system reliability
+- Served in on-call rotation, handling production incidents and ensuring uptime
 
-Stack: PHP (Zend, Laravel), JavaScript (jQuery, Vue.js), CSS/Sass
+**Impact:**
 
-### 2011 - 2014 SEDUCO
+- Improved conversion in onboarding flows
+- Reduced manual billing overhead through automation
+- Strengthened production reliability in a real-time system
 
-Full-stack engineer
+---
 
-- Facilitated effective communication with clients to deliver tailored solutions
+### 2018 – 2020
 
-Stack: PHP (CodeIgniter, Laravel), JavaScript (jQuery), HTML, CSS
+**Full-Stack Engineer** — Sticker Mule
+
+Worked on internal systems supporting global manufacturing and logistics operations at [Sticker Mule](https://www.stickermule.com).
+
+- Developed and scaled internal applications used in manufacturing and shipping workflows
+- Refactored legacy systems into modular, service-oriented architecture
+- Improved performance and maintainability of critical internal tools
+- Contributed to systems handling real-world operational workloads
+
+**Impact:**
+
+- Increased system reliability in production workflows
+- Reduced technical debt through architectural improvements
+- Enabled faster iteration through better system structure
+
+---
+
+### 2014 – 2018
+
+**Lead Backend Engineer** — TRIONYX Technologies
+
+Led backend development for a high-traffic [national news platform](https://www.ta3.com).
+
+- Redesigned system architecture to improve maintainability and onboarding
+- Introduced Git, code reviews, and engineering best practices across the team
+- Implemented CI/CD concepts, Docker-based workflows, and modern frontend tooling
+- Introduced automated testing where none existed
+- Mentored junior developers and improved team engineering standards
+
+**Impact:**
+
+- Significantly improved developer productivity and code quality
+- Reduced onboarding time for new engineers
+- Modernized legacy development processes into scalable workflows
+
+---
+
+### 2011 – 2014
+
+**Full-Stack Engineer** — SEDUCO
+
+- Delivered custom web solutions for clients across different domains
+- Worked directly with clients to translate business requirements into technical solutions
+
+---
 
 ## Education
 
-### 2009 - 2014 Faculty of Economics, Matej Bel University
-
+**Matej Bel University – Faculty of Economics**
+Master’s Degree – Management of Tourism
 Banská Bystrica, Slovakia
 
-- Bachelor and Master degree in the field "Management of Tourism"
+---
 
 ## Contact
 
-- E-mail: [tomas.gustinak@gmail.com](mailto:tomas.gustinak@gmail.com)
-- Github: [https://github.com/tgustinak](https://github.com/tgustinak)
+- Email: tomas.gustinak@gmail.com
+- GitHub: https://github.com/tgustinak
