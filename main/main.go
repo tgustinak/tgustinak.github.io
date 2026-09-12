@@ -19,6 +19,7 @@ func main() {
 	templateDir := flag.String("templates", "templates", "Templates directory path")
 	outputDir := flag.String("output", ".", "Output directory path")
 	watch := flag.Bool("watch", false, "Watch for file changes")
+
 	flag.Parse()
 
 	gen := generator.NewGenerator(*templateDir, *outputDir)
@@ -66,7 +67,20 @@ func processFiles(contentDir string, gen *generator.Generator) error {
 			return err
 		}
 
-		outputFile := filepath.Base(path[:len(path)-3]) + ".html"
+		if meta == nil {
+			meta = &parser.Frontmatter{}
+		}
+
+		rel, err := filepath.Rel(contentDir, path)
+		if err != nil {
+			return err
+		}
+		outputFile := filepath.Join(
+			filepath.Dir(rel),
+			filepath.Base(rel[:len(rel)-len(filepath.Ext(rel))]),
+			".html",
+		)
+
 		return gen.Generate(map[string]any{
 			"Title":       meta.Title,
 			"Date":        meta.Date,
