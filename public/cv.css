@@ -33,30 +33,6 @@ body {
   font-kerning: normal;
 }
 
-/* Top navigation — quiet, out of the way. */
-header nav {
-  max-width: var(--measure);
-  margin: 0 auto 20px;
-  display: flex;
-  justify-content: flex-end;
-  gap: 4px;
-  font-size: 0.85rem;
-}
-
-header nav a {
-  color: var(--muted);
-  text-decoration: none;
-  padding: 4px 12px;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  background: var(--paper);
-}
-
-header nav a:hover {
-  color: var(--accent);
-  border-color: var(--accent);
-}
-
 /* The paper sheet. */
 main#content {
   max-width: var(--measure);
@@ -154,10 +130,6 @@ footer {
   text-align: center;
 }
 
-footer a {
-  color: var(--faint);
-}
-
 /* Narrow screens. */
 @media only screen and (max-width: 640px) {
   body {
@@ -215,7 +187,6 @@ footer a {
     line-height: 1.5;
   }
 
-  header nav,
   footer {
     display: none;
   }
