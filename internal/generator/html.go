@@ -4,6 +4,7 @@ import (
 	"html/template"
 	"os"
 	"path/filepath"
+	"strings"
 )
 
 type Generator struct {
@@ -35,22 +36,31 @@ func (g *Generator) template() (*template.Template, error) {
 	return g.tmpl, g.tmplErr
 }
 
-func (g *Generator) Generate(data any, outputFile string) error {
+func (g *Generator) Invalidate() {
+	g.tmpl = nil
+	g.tmplErr = nil
+	g.tmplParsed = false
+}
+
+func (g *Generator) Render(data any) (string, error) {
+	tmpl, err := g.template()
+	if err != nil {
+		return "", err
+	}
+
+	var out strings.Builder
+	if err := tmpl.Execute(&out, data); err != nil {
+		return "", err
+	}
+
+	return out.String(), nil
+}
+
+func (g *Generator) Write(outputFile string, content string) error {
 	outPath := filepath.Join(g.OutputDir, outputFile)
 	if err := os.MkdirAll(filepath.Dir(outPath), 0o755); err != nil {
 		return err
 	}
 
-	tmpl, err := g.template()
-	if err != nil {
-		return err
-	}
-
-	out, err := os.Create(outPath)
-	if err != nil {
-		return err
-	}
-	defer out.Close()
-
-	return tmpl.Execute(out, data)
+	return os.WriteFile(outPath, []byte(content), 0o644)
 }
