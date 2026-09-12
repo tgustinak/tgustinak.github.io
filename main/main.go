@@ -31,8 +31,10 @@ func main() {
 	}
 
 	if *watch {
-		fmt.Println("Watching for file changes...")
-		err := watcher.Watch(*contentDir, func() error {
+		fmt.Println("Watching for file changes... (Ctrl+C to stop)")
+		err := watcher.Watch([]string{*contentDir, *templateDir}, func() error {
+			gen.Invalidate()
+
 			return processFiles(*contentDir, gen)
 		})
 		if err != nil {
@@ -63,11 +65,6 @@ func processFiles(contentDir string, gen *generator.Generator) error {
 
 		parsed := parser.ParseMarkdown(content)
 
-		minifiedHtml, err := minify.Minify([]byte(parsed.HTMLOutput))
-		if err != nil {
-			return err
-		}
-
 		if meta == nil {
 			meta = &parser.Frontmatter{}
 		}
@@ -80,12 +77,22 @@ func processFiles(contentDir string, gen *generator.Generator) error {
 		base := strings.TrimSuffix(filepath.Base(rel), filepath.Ext(rel))
 		outputFile := filepath.Join(filepath.Dir(rel), base+".html")
 
-		return gen.Generate(map[string]any{
+		page, err := gen.Render(map[string]any{
 			"Title":       meta.Title,
 			"Date":        meta.Date,
 			"Tags":        meta.Tags,
-			"Content":     template.HTML(minifiedHtml),
+			"Content":     template.HTML(parsed.HTMLOutput),
 			"Description": meta.Description,
-		}, outputFile)
+		})
+		if err != nil {
+			return err
+		}
+
+		minifiedPage, err := minify.Minify([]byte(page))
+		if err != nil {
+			return err
+		}
+
+		return gen.Write(outputFile, string(minifiedPage))
 	})
 }
