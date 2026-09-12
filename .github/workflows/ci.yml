@@ -1,0 +1,30 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+
+      - name: Format check
+        run: test -z "$(gofmt -l main internal)"
+
+      - name: Vet
+        run: go vet ./...
+
+      - name: Test
+        run: go test ./...
+
+      - name: Build site
+        run: go run main/main.go -output /tmp/site
+
+      - name: Verify output
+        run: test -f /tmp/site/index.html && test -f /tmp/site/sitemap.xml && test -f /tmp/site/404.html
