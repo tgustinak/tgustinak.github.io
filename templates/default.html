@@ -4,11 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{.Title}}</title>
-    <link rel="stylesheet" href="/public/index.css">
+    <meta name="description" content="{{.Description}}">
+    <link rel="canonical" href="{{.Site.Canonical}}">
+    <meta property="og:title" content="{{.Title}}">
+    <meta property="og:description" content="{{.Description}}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{.Site.Canonical}}">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{.Title}}">
+    <meta name="twitter:description" content="{{.Description}}">
+    <meta name="theme-color" content="#fbfbfb">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%23111'/%3E%3Ctext x='8' y='12' font-size='10' text-anchor='middle' fill='white' font-family='sans-serif'%3ET%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="public/index.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "{{.Site.Author}}",
+        "jobTitle": "Senior Full-Stack Engineer",
+        "url": "{{.Site.BaseURL}}",
+        "sameAs": ["https://github.com/tgustinak"]
+    }
+    </script>
 </head>
 <body>
-    <div id="content">
+    <header>
+        <nav>
+            <a href="index.html">CV</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+    <main id="content">
       {{.Content}}
-    </div>
+    </main>
+    <footer>
+        <p>&copy; {{.Site.Year}} {{.Site.Author}} &middot; <a href="index.html">CV</a> &middot; <a href="about.html">About</a></p>
+    </footer>
 </body>
 </html>

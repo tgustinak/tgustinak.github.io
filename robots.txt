@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tgustinak.github.io/sitemap.xml
