@@ -35,9 +35,9 @@ Specializing in system architecture, backend services, and complex product devel
 
 ## Technical Stack
 
-**Expert:** Node.js, TypeScript, React, PostgreSQL, Docker, CI/CD, Linux
-**Proficient:** Go, PHP (Laravel), GraphQL, Kubernetes, AWS, Playwright
-**Familiar:** Ruby on Rails, Vue, GCP, Terraform, gRPC, Jenkins
+- **Expert:** Node.js, TypeScript, React, PostgreSQL, Docker, CI/CD, Linux
+- **Proficient:** Go, PHP (Laravel), GraphQL, Kubernetes, AWS, Playwright
+- **Familiar:** Ruby on Rails, Vue, GCP, Terraform, gRPC, Jenkins
 
 ---
 
