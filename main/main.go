@@ -7,6 +7,7 @@ import (
 	"log"
 	"os"
 	"path/filepath"
+	"strings"
 
 	"tgustinak.github.io/internal/generator"
 	"tgustinak.github.io/internal/minify"
@@ -75,11 +76,9 @@ func processFiles(contentDir string, gen *generator.Generator) error {
 		if err != nil {
 			return err
 		}
-		outputFile := filepath.Join(
-			filepath.Dir(rel),
-			filepath.Base(rel[:len(rel)-len(filepath.Ext(rel))]),
-			".html",
-		)
+
+		base := strings.TrimSuffix(filepath.Base(rel), filepath.Ext(rel))
+		outputFile := filepath.Join(filepath.Dir(rel), base+".html")
 
 		return gen.Generate(map[string]any{
 			"Title":       meta.Title,
