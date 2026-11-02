@@ -27,7 +27,7 @@ Specializing in system architecture, backend services, and complex product devel
 - High-Traffic & Distributed Systems
 - Frontend Architecture (React, micro-frontends serving 10+ teams)
 - Developer Experience & Workflow Optimization (CI/CD, testing, tooling)
-- AI-Assisted Delivery (AI tooling as part of the daily development workflow)
+- AI-Assisted Delivery (Claude Code daily — writing code, drafting reports, analyzing bugs and production logs)
 - Mentoring, Hiring, and Technical Leadership
 - Remote-first collaboration (since 2018)
 
@@ -38,6 +38,7 @@ Specializing in system architecture, backend services, and complex product devel
 - **Expert:** Node.js, TypeScript, React, PostgreSQL, Docker, CI/CD, Linux
 - **Proficient:** Go, PHP (Laravel), GraphQL, Kubernetes, AWS, Playwright
 - **Familiar:** Ruby on Rails, Vue, GCP, Terraform, gRPC, Jenkins
+- **AI Tooling:** Claude Code (daily) — AI-assisted coding, report generation, bug analysis, log analysis
 
 ---
 
@@ -55,6 +56,7 @@ Large-scale aviation platform for managing and processing aeronautical data, spa
 - Supported the on-demand release process across 30+ applications in a multi-team environment
 - Aligned technical design with long-term system goals together with architects and product teams
 - Participated in hiring and technical evaluation of engineers
+- Made Claude Code part of the daily engineering workflow — writing code, generating reports, analyzing bugs and production logs — accelerating delivery and debugging across the platform
 
 **Impact:**
 
